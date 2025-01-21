@@ -21,4 +21,5 @@ public class Ejercicio3 {
     } else {
         ceros++;
     }
+    leerDatos.close();
 }
