@@ -4,15 +4,17 @@
  */
 
 import java.util.Scanner;
-public static void main (String[] args) {
-    Scanner leerDatos = new Scanner(System.in);
-    double[] numeros = new double[6];
-    for (int i = 0; i < 6; i++) {
-        System.out.println("Introduce un número decimal: ");
-        numeros[i] = leerDatos.nextDouble();
+public class Ejercicio1 {
+    public static void main (String[] args) {
+        Scanner leerDatos = new Scanner(System.in);
+        double[] numeros = new double[6];
+        for (int i = 0; i < 6; i++) {
+            System.out.println("Introduce un número decimal: ");
+            numeros[i] = leerDatos.nextDouble();
+        }
+        for (int i = 0; i < 6; i++) {
+            System.out.println(numeros[i]);
+        }
+        leerDatos.close();
     }
-    for (int i = 0; i < 6; i++) {
-        System.out.println(numeros[i]);
-    }
-    leerDatos.close();
 }
