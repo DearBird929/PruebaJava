@@ -7,7 +7,7 @@
  * ¿Qué cambiarias para que se ordenara de mayor a menor?
  * ¿Que pasa si se encuentra 2 números con el mismo valor?
  */
-/* 
+/*
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 import java.util.Arrays;

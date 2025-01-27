@@ -1,7 +1,7 @@
-/* Hacer un programa que pida 6 números decimales al usuario
- * y los guarde en un array, después debe mostrarlos en orden 
- * que se introdujeron.
- */
+/* Hacer un programa que pida 10 números al usuario,
+almacenarlos en un array. Y calcular: la media de los 
+números positivos, la media de los números negativos 
+y contar el número de ceros */
 import java.util.Scanner;
 
 public class Ejercicio3 {
