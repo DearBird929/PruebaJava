@@ -1,2 +1,2 @@
 # PruebaJava
-Primera vez usando github y mis proyectos de JAVA
+Este repositorio lo usare simplemente para mis proyectos de java que haré durante el curso.
