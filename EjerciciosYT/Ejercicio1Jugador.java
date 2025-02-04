@@ -11,6 +11,12 @@ public class Ejercicio1Jugador {
         int nivel = 1;
         int pociones = 0;
         int experienciaRequerida = (int) (50 * Math.pow(1.5, nivel - 1));
+        Object[][] enemigos = {
+            {"Paladin", 2, 10},
+            {"Tirador", 4, 16},
+            {"Guerrero", 3, 14},
+            {"Mago", 5, 20}
+        };
 
         while (vida > 0) {
             System.out.println("\n¿Qué quieres hacer?");
@@ -21,16 +27,20 @@ public class Ejercicio1Jugador {
 
             switch (eleccion) {
                 case 1:
-                    int daño = (int) (Math.random() * 5) + 1;
-                    vida -= daño;
+                int indiceEnemigo = (int) (Math.random() * enemigos.length);
+                String enemigoSeleccionado = (String) enemigos[indiceEnemigo][0];
+                int dañoRecibido = (int) enemigos[indiceEnemigo][1];
+                int expGanada = (int) enemigos[indiceEnemigo][2];
+                System.out.println("¡Te enfrentas a un " + enemigoSeleccionado + "!");
+                System.out.println("Hace " + dañoRecibido + " de daño.");
+                System.out.println("Si ganas, obtendrás " + expGanada + " puntos de experiencia.");
+                    vida -= dañoRecibido;
+                    experiencia += expGanada;
                     if (vida <= 0) {
                         System.out.println("Has muerto, perdiste todo el progreso.");
                         break;
                     }
-                    int expGanada = (int) (Math.random() * 11) + 10;
                     experiencia += expGanada;
-                    System.out.println(">>> Recibiste " + daño + " de daño.");
-                    System.out.println(">>> Ganaste " + expGanada + " puntos de experiencia.");
                     System.out.println(">>> Vida restante: " + vida);
                     System.out.println(">>> Experiencia total: " + experiencia);
 
